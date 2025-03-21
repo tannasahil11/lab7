@@ -1,5 +1,14 @@
+[build]
+  publish = "public"                # or wherever your static site is built
+  functions = "backend/functions"   # update the path if your functions folder is in the backend folder
+  node_bundler = "esbuild"
+
 [[redirects]]
-  from = "/*"
-  to = "index.html"
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
   status = 200
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

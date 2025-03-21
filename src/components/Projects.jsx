@@ -10,7 +10,7 @@ function Projects({theme}){
     const[projects, setProject] = useState(null);
 
     useEffect(()=>{
-        axios.get("http://localhost:9000/.netlify/functions/api/projects")
+        axios.get("/api/projects")
         .then((response) => setProject(response.data))
         .catch((error) => console.error("Error fetching projects: ", error));
     }, []);
@@ -31,8 +31,8 @@ function Projects({theme}){
                 {project.technologies.map((techPath, i) => (
                   <img
                     key={i}
-                    src={`${techPath}`}
-                    alt={`${project["tech-name"][i]} logo`}
+                    src={techPath}
+                    alt={project["tech-name"][i]}
                     className="tech-icon"
                     title={project["tech-name"][i]}
                   />

@@ -1,13 +1,13 @@
 [
     {
     "name": "amazon-clone",
-    "technologies": ["../src/assets/react.svg", "../../src/assets/javascript.svg", "../../src/assets/firebase.svg", "../../src/assets/stripe.png"],
+    "technologies": ["/assets/react.svg", "/assets/javascript.svg", "/assets/firebase.svg", "/assets/stripe.png"],
     "tech-name": ["React", "Javascript", "Firebase", "Stripe"],
     "info" : ["Integrated Stripe API for secure payment processing, enhancing the e-commerce functionality.", "Enhanced cloud functionality with Firebase, integrating authentication, authorization, and encryption for improved data protection and privacy."]
     },
     {  
         "name": "tic-tec-toe",
-        "technologies": ["../../src/assets/react-native.svg", "../../src/assets/nodejs.svg", "../../src/assets/supabase.svg", "../../src/assets/confluence.svg"],
+        "technologies": ["/assets/react-native.svg", "/assets/nodejs.svg", "/assets/supabase.svg", "/assets/confluence.svg"],
         "tech-name": ["React Native", "Nodejs", "Supabase", "Confluence"],
         "info" : ["Developed a cross-platform social media application for finding research papers and collaborating with authors.", "Features include user authentication, text-to-speech and a recommendation system using Gemini's AI model for generating text embeddings."]
     }
