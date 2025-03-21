@@ -1,0 +1,66 @@
+.card{
+    font-family: monospace;
+    font-size: 1rem;;
+}
+h5{
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+}
+.tech-icon{
+    max-width: 58px;
+    height: 38px;
+    padding-right: 12px;
+}
+
+.light-card{
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+.dark-card{
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+@media (max-width: 630px) {
+    /* Make cards responsive */
+    .container .card {
+      width: 90% !important; 
+      max-width: 100%;
+      padding: 10px !important; 
+    }
+    
+    .details {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+      }
+    
+    .details h5 {
+      width: 100%; 
+      margin-bottom: 6px;
+    }
+    .resp{
+        width: 100%;
+    }
+    .tech-icon {
+      width: 40px;
+      height: 32px;
+    }
+    
+    .list li {
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+    
+    /* Smaller heading text on mobile */
+    .card h4 {
+      font-size: 1.2rem;
+    }
+  }
