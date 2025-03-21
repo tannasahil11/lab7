@@ -1,9 +1,5 @@
 import '../styles/Projects.css';
 import axios from 'axios';
-import reactLogo from '../assets/react.svg';
-import javascriptLogo from '../assets/javascript.svg';
-import firebaseLogo from '../assets/firebase.svg';
-import stripeLogo from '../assets/stripe.png';
 import {useEffect, useState}  from 'react';
 
 function Projects({theme}){
