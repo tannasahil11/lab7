@@ -1,5 +1,5 @@
 [build]
-  publish = "public"                # or wherever your static site is built
+  publish = "dist"                # or wherever your static site is built
   functions = "backend/functions"   # update the path if your functions folder is in the backend folder
   node_bundler = "esbuild"
 
