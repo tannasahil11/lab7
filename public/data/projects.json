@@ -1,7 +1,7 @@
 [
     {
     "name": "amazon-clone",
-    "technologies": ["../../src//assets/react.svg", "../../src/assets/javascript.svg", "../../src/assets/firebase.svg", "../../src/assets/stripe.png"],
+    "technologies": ["../src/assets/react.svg", "../../src/assets/javascript.svg", "../../src/assets/firebase.svg", "../../src/assets/stripe.png"],
     "tech-name": ["React", "Javascript", "Firebase", "Stripe"],
     "info" : ["Integrated Stripe API for secure payment processing, enhancing the e-commerce functionality.", "Enhanced cloud functionality with Firebase, integrating authentication, authorization, and encryption for improved data protection and privacy."]
     },
