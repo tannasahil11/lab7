@@ -2,8 +2,6 @@ const express = require("express");
 const serverless = require("serverless-http");
 const dotenv = require("dotenv");
 const cors = require("cors");
-const axios = require("axios");
-const fetch = require("node-fetch");
 const path = require('path');
 const fs = require('fs');
 
@@ -22,7 +20,7 @@ router.get('/', (req, res) => {
 router.get("/projects", (req, res) => {
     try {
         // Adjust the path based on where your JSON file is relative to this file.
-        const projectsPath = path.join('./', '../public', 'data', 'projects.json');
+        const projectsPath = path.join(__dirname, "../../public/data/projects.json");
         const projectsData = fs.readFileSync(projectsPath, 'utf8');
         const projects = JSON.parse(projectsData);
         res.json(projects);
