@@ -6,7 +6,7 @@
 * *Date Created*: 03/18/2025
 * *Last Modification Date*: 03/21/2025
 * *GitLab URL*: <https://git.cs.dal.ca/stanna/csci3172/-/tree/main/labs/lab7>
-* *Netlify URL*: <https://st3os.netlify.app/> 
+* *Netlify URL*: <https://lab7-st3os.netlify.app/> 
 
 
 ## Authors
@@ -36,6 +36,10 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## Testing Serverless Functions
+Visit the deployed app and add /.netlify/functions/api/weather to get the results for the API request to the weather.
 
 
 ## Testing and Error Handling
