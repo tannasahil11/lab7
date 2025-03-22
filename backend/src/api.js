@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
         message: "Hello World!"
     });
 });
-router.get("api/projects", (req, res) => {
+router.get("/projects", (req, res) => {
     try {
         // Adjust the path based on where your JSON file is relative to this file.
         const projectsPath = path.join(__dirname, "../../public/data/projects.json");
@@ -32,7 +32,7 @@ router.get("api/projects", (req, res) => {
         });
       }
   })
-  router.get('api/weather', async (req, res) => {
+  router.get('/weather', async (req, res) => {
     try {
       const https = require('https');
       
