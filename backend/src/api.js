@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 router.get("/projects", (req, res) => {
     try {
         
-        const projectsPath = path.join(__dirname, "projects.json");
+        const projectsPath = path.join(__dirname, "..", "src", "projects.json");
         const projectsData = fs.readFileSync(projectsPath, 'utf8');
         const projects = JSON.parse(projectsData);
         res.json(projects);
