@@ -6,7 +6,7 @@ function Projects({theme}){
     const[projects, setProject] = useState(null);
 
     useEffect(()=>{
-        axios.get("/api/projects")
+        axios.get("/.netlify/functions/api/projects")
         .then((response) => setProject(response.data))
         .catch((error) => console.error("Error fetching projects: ", error));
     }, []);

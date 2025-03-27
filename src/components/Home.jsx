@@ -7,7 +7,7 @@ function Home(){
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
-        axios.get("/api/weather")
+        axios.get("/.netlify/functions/api/weathe")
             .then((response) => {
                 setWeatherData(response.data);
                 setLoading(false);
